@@ -889,11 +889,13 @@ address {
     width: 448px;
     padding: 11px 12px 11px 32px;
 }
+
 .contact-form input:hover, input:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
     cursor: pointer;
 }
+
 .contact-form textarea:hover, textarea:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
