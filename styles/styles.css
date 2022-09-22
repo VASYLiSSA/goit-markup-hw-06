@@ -448,6 +448,7 @@ body {
     border: none;
     fill: var(--accent-color);
   }
+  
   .checkbox:focus + .icon-checked,
   .checkbox:hover + .icon-checked {
     outline: 1px solid var(--button-background-color);
