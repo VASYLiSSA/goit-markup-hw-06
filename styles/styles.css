@@ -292,6 +292,21 @@ body {
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0 0 0 / 12%), 0px 1px 1px rgba(0 0 0 / 14%), 0px 2px 1px rgba(0 0 0 / 20%);
 }
+
+.modal-link {
+    color: var(--accent-text-color);
+    margin-left: 3px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .modal-link:hover,
+  .modal-link:focus {
+    text-decoration: none;
+    border-color: var(--button-background-color);
+  }
+
 .modal h4 {
     font-family: 'Roboto';
     font-style: normal;
@@ -411,6 +426,37 @@ body {
     margin: 0 auto 30px auto;
     
 }
+
+.icon-checked {
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+    border: 2px solid var(--title-text-color);
+    border-radius: 2px;
+    fill: var(--white-text-color);
+  }
+  .checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-left: 52px;
+    margin-right: 52px;
+    margin-bottom: 30px;
+  }
+  .checkbox:checked + .icon-checked {
+    background-color: var(--accent-text-color);
+    border-color: var(--accent-text-color);
+  }
+  .checkbox:focus + .icon-checked,
+  .checkbox:hover + .icon-checked {
+    outline: 1px solid var(--button-background-color);
+  }
 
 .feature-image {
     width: 270px;
@@ -646,6 +692,7 @@ address {
 .team-list li {
     width: 270px;
     gap: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .section {
@@ -825,7 +872,14 @@ address {
     line-height: 14px;
     /* identical to box height */
     letter-spacing: 0.01em;
+    display: block;
+    margin-bottom: 10px;
 }
+
+.comment-text {
+    margin-bottom: 20px;
+}
+
 .contact-form input[type="text"], input[type="tel"], input[type="email"] {
     border: 1px solid rgba(33, 33, 33, 0.2);
     color: #757575;
